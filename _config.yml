@@ -1,0 +1,15 @@
+# Site settings
+title: jianzhong.li
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "jianzhong.li" # the base hostname & protocol for your site
+
+# Scripts
+google_analytics: "UA-33547810-3"
+disqus_shortname: "kexanie"
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+exclude: ["README.md", "LICENSE", "Gemfile"]
+sass:
+  style: compressed

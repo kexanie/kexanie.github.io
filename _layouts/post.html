@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+  <div class="container">
+    {% include header.html %}
+    {{ content }}
+
+    <!-- Disqus -->
+    {% if page.comments == true %}
+      {% if site.disqus_shortname %}
+        <div class="comments">
+          {% include disqus.html %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+
+  {% include scripts.html %}
+
+</body>
+</html>
